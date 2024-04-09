@@ -8,7 +8,7 @@
 
 [力扣题目链接](https://leetcode.cn/problems/remove-linked-list-elements/description/)
 
-创建一个dummy结点
+创建一个dummy结点，避免头结点分类讨论
 
 ```cpp
 /**
