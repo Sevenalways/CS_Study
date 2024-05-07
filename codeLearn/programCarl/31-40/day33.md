@@ -71,7 +71,33 @@ public:
 };
 ```
 ```CPP
-
+class Solution {
+public:
+    // 一次便利，依次记录上升下降区间
+    // 若上升，则加1，若下降 则区间所有都加1
+    int candy(vector<int>& ratings) {
+        int ans = 1;
+        int n = ratings.size();
+        int inc = 1, dec = 0;
+        int num = 1;
+        for (int i = 1; i < n; i++) {
+            if (ratings[i] >= ratings[i -1]) {
+                dec = 0;
+                num = ratings[i] == ratings[i - 1] ? 1 : num + 1;
+                ans += num;
+                inc = num;
+            } else {
+                dec++;
+                if (dec == inc) {
+                    dec++;
+                }
+                ans += dec;
+                num = 1;
+            }
+        }
+        return ans;
+    }
+};
 ```
 
 #### 134. 加油站
