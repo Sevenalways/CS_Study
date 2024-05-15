@@ -1,4 +1,4 @@
-day34 今日任务5.9
+## day34 今日任务5.9
 
 1.  860.柠檬水找零
 2.  406.根据身高重建队列
@@ -34,6 +34,8 @@ public:
 ####  406.根据身高重建队列
 
 [力扣题目链接](https://leetcode.cn/problems/queue-reconstruction-by-height/)
+
+如果有多个维度，需要考虑先根据哪个维度排序
 
 ```cpp
 // 版本一
