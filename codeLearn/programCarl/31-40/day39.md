@@ -50,7 +50,7 @@ public:
 
 [力扣题目链接](https://leetcode.cn/problems/unique-paths-ii/)
 
-只需要判断一下
+只需要判断一下是不是为障碍物
 
 ```cpp
 class Solution {
