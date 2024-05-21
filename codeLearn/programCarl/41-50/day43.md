@@ -15,7 +15,7 @@
 ```cpp
 class Solution {
 public:
-    // 完全背包问题，求方案数
+    // 完全背包问题，求方案数 组合数
     // dfs(i, c) = dfs(i - 1, c) + dfs(i, c - coins[i])
     int change(int amount, vector<int>& coins) {
         int n = coins.size();
@@ -45,7 +45,7 @@ public:
 ```cpp
 class Solution {
 public:
-    // 完全背包问题
+    // 完全背包问题 排列数
     int combinationSum4(vector<int>& nums, int target) {
         vector<int> f(target + 1, 0);
         f[0] = 1;
