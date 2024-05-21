@@ -10,6 +10,8 @@
 
 [力扣题目链接](https://leetcode.cn/problems/coin-change-ii/)
 
+装满背包有几种方法，递推公式一般都是dp[i] += dp[i - nums[j]];
+
 ```cpp
 class Solution {
 public:
@@ -37,6 +39,8 @@ public:
 #### 377. 组合总和 Ⅳ
 
 [力扣题目链接](https://leetcode.cn/problems/combination-sum-iv/)
+
+装满背包有几种方法，递推公式一般都是dp[i] += dp[i - nums[j]];
 
 ```cpp
 class Solution {
